@@ -8,6 +8,7 @@ body {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   font-size: 15px;
   color: black;
+  background-color: #ffebeb;
 }
 
 .flex {
@@ -67,6 +68,7 @@ h2 {
   font-size: 38px;
   font-weight: 500;
   text-align: center;
+  font-family: 'Franklin Gothic Medium',  sans-serif;
 }
 
 p {
@@ -93,9 +95,9 @@ p {
 }
 
 header {
-  background-color: #b60034;
-  color: white;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.19);
+  background-color: #ffebeb;
+  color: #b60034;
+  border-bottom: 3px solid rgba(182, 0, 52, 0.19);
 }
 
 header .container {
@@ -106,7 +108,7 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
-  padding: 15px 0;
+  padding: 15px 30px;
 }
 
 header .logo-and-name {
@@ -141,13 +143,8 @@ header i {
   text-shadow: 0 0 1px black;
 }
 
-.background {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #b60034), color-stop(80%, #ffebeb));
-  background-image: linear-gradient(#b60034 5%, #ffebeb 80%);
-}
-
 .main-info {
-  color: white;
+  color: #b60034;
 }
 
 .main-info .container {
@@ -161,12 +158,16 @@ header i {
   height: 700px;
 }
 
+.main-info .spoiler {
+  font-family: "Cormorant Infant", serif;
+  font-size: 58px;
+}
+
 .main-info h1 {
-  font-family: "Playfair Display", serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 48px;
-  text-shadow: 0 0 3px black;
+  text-shadow: 0 0 0.2px black;
   text-transform: capitalize;
   margin: 80px auto;
 }
@@ -201,13 +202,13 @@ header i {
 }
 
 .main-info h2 {
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 0.2px black;
   margin-bottom: 45px;
   line-height: 30px;
 }
 
 .main-info p {
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 0.2px black;
   line-height: 24px;
   width: 500px;
   text-align: center;
@@ -230,15 +231,14 @@ header i {
 }
 
 .promotion .description {
-  width: 43%;
+  width: 44%;
 }
 
-.promotion h3 {
-  color: #b60034;
+.promotion p {
   text-shadow: 0 0 0.2px black;
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-  font-weight: 500;
+  color: #b60034;
+  font-size: 20px;
+  font-weight: 300;
   margin-bottom: 30px;
 }
 
@@ -257,31 +257,35 @@ header i {
 }
 
 .user-action .text-and-photo {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px auto;
+  margin: 40px 0;
 }
 
 .user-action .text-and-photo img {
-  height: 350px;
-  width: 250px;
+  height: 400px;
+  width: 300px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .user-action h1 {
-  font-family: "Playfair Display", serif;
-  width: 60%;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 42px;
+  width: 600px;
+  font-size: 44px;
   color: #b60034;
   text-shadow: 0 0 0.5px black;
   text-align: center;
+  font-weight: 300;
 }
 
 .user-action button {
@@ -294,6 +298,7 @@ header i {
   text-transform: uppercase;
   color: white;
   text-shadow: 0 0 0.4px black;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
@@ -302,8 +307,8 @@ header i {
   background-color: #ffebeb;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
-  -webkit-transition: background .4s ease;
-  transition: background .4s ease;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
   color: #b60034;
 }
 
@@ -358,9 +363,15 @@ footer {
 }
 
 footer > p {
-  font-size: 14px;
-  text-align: center;
-  line-height: 34px;
+  font-size: 14px !important;
+  text-align: center !important;
+  line-height: 34px !important;
+  margin: 0 !important;
+  color: white !important;
+}
+
+footer a:hover {
+  cursor: progress;
 }
 
 footer .container {
@@ -391,15 +402,17 @@ footer .container .contacts p {
     width: 95vw;
   }
   header .container {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 28px;
+    padding: 15px 15px;
   }
   header .logo-and-name {
     padding-right: unset;
   }
   header .logo-and-name img {
-    height: 90px;
+    height: 60px;
   }
   header a:hover {
     font-size: inherit;
@@ -415,9 +428,13 @@ footer .container .contacts p {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .main-info .spoiler {
+    padding: 0 15px;
+    font-size: 40px;
+  }
   .main-info h1 {
     margin: 30px auto 40px auto;
-    font-size: 5vh;
+    font-size: 4.5vh;
     text-align: center;
   }
   .main-info .images {
@@ -450,7 +467,8 @@ footer .container .contacts p {
   }
   .main-info p {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
+    padding: 0 10px;
   }
   .promotion .container {
     margin: 0 auto;
@@ -466,9 +484,9 @@ footer .container .contacts p {
   .promotion .description {
     width: 100%;
   }
-  .promotion h3 {
-    text-align: left;
-    padding-left: 15px;
+  .promotion p {
+    text-align: center;
+    padding: 0 15px;
   }
   .promotion iframe {
     margin-bottom: 30px;
@@ -482,15 +500,21 @@ footer .container .contacts p {
             flex-direction: column-reverse;
   }
   .user-action h1 {
-    margin-top: 20px;
-    font-size: 5vh;
-    width: 93vw;
+    margin-top: 30px;
+    font-size: 27px;
+    width: 100%;
   }
   .user-action .empty-box {
     width: 100%;
   }
+  .user-action button {
+    margin: 0 0 40px;
+  }
   .user-action .links {
     width: 100%;
+  }
+  .user-action .links h2 {
+    padding: 0 10px;
   }
   .user-action .links .links-box {
     -ms-flex-pack: distribute;
@@ -501,6 +525,11 @@ footer .container .contacts p {
   }
   footer .container {
     height: 100px;
+  }
+  footer .container p {
+    font-size: inherit;
+    color: inherit;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=mainstyle.css.map */
