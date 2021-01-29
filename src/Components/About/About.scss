@@ -1,0 +1,148 @@
+@import '../../index.scss';
+
+.about.container {
+    margin: 60px auto;
+    color: $mainColor;
+
+    .logo-and-text {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 54px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    img {
+        width: 300px;
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 24px;
+
+        & + li {
+            margin-top: 20px;
+        }
+    }
+
+    .container {
+        margin-top: 40px;
+        align-items: center;
+        justify-content: space-between;
+
+        .picture {
+            width: 375px;
+            height: 375px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .philosophy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 375px;
+    }
+
+    .about-box {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about.container {
+        margin: 40px auto;
+    
+        .logo-and-text {
+            flex-direction: column-reverse;
+        }
+    
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+    
+        h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 22px;
+    
+            & + li {
+                margin-top: 20px;
+            }
+        }
+    
+        .container {
+            margin-top: 20px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .picture {
+                width: 100%;
+                height: 375px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    
+        .philosophy {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 20px;
+        }
+    
+        .about-box {
+            margin-top: 20px;
+        }
+    }
+}

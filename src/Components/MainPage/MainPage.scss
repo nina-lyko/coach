@@ -1,0 +1,324 @@
+@import '../../index.scss';
+
+
+.main-info {
+    color: $mainColor;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+    }
+
+    .spoiler {
+        font-family: $tagsFont;
+        font-size: 58px;
+    }
+
+    h1 {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 48px;
+        text-shadow: 0 0 0.2px black;
+        text-transform: capitalize;
+        margin: 80px auto;
+    }
+
+    .photo-and-text {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .images {
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        border-radius: 15px;
+        height: 400px;
+        width: 267px;
+        object-fit: cover;
+        opacity: 0;
+        transition: all .6s ease;
+    }
+
+    .visible {
+        transition: all .6s ease;
+        opacity: 1;
+    }
+
+    h2 {
+        font-size: 44px;
+        font-weight: 600;
+        text-shadow: 0 0 0.2px black;
+        margin-bottom: 45px;
+        line-height: 30px;
+    }
+
+    p {
+        text-shadow: 0 0 0.2px black;
+        line-height: 24px;
+        width: 500px;
+        text-align: center;
+    }
+
+
+}
+
+.promotion {
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        height: 450px;
+        padding: 0 10px;
+    }
+
+    .description {
+        width: 44%;
+    }
+
+    p {
+        text-shadow: 0 0 0.2px black;
+        color: $mainColor;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+}
+
+.user-action {
+    
+    .container {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        position: relative
+    }
+
+    .text-and-photo {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0;
+
+        img {
+            height: 400px;
+            width: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+
+    h1 {
+        width: 600px;
+        font-size: 44px;
+        font-weight: 600;
+        color: $mainColor;
+        text-shadow: 0 0 0.5px black;
+        text-align: center;
+    }
+
+    button {
+        height: 80px;
+        width: 300px;
+        font-size: 22px;
+        background-color: white;
+        border: 3px solid $mainColor;
+        border-radius: 40px;
+        text-transform: uppercase;
+        color: $mainColor;
+        text-shadow: 0 0 0.4px black;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        transition: all.4s ease;
+
+        &:hover,
+        &:active {
+            border-color: $mainColor;
+            background-color: $mainColor;            
+            color: white;
+        }
+    }
+
+    .links {
+        transition: all .5s ease;
+        width: 700px;
+        height: 0;
+        opacity: 0;
+        z-index: -10;
+        border: 4px solid $mainColor;
+        margin: 0 auto 30px;
+        border-radius: 30px;
+
+        h2 {
+            opacity: 0;
+            color: $mainColor;
+            margin: 40px auto 20px;
+        }
+
+        .links-box {
+            opacity: 0;
+            width: 350px;
+            height: 130px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px auto;
+
+        }
+
+        a {
+            font-size: 98px;
+            color: $mainColor;
+            text-shadow: 0 0 1px black;
+            transition: all .4s ease;
+
+            &:hover {
+                font-size: 130px;
+            }
+        }
+    }
+
+    .active {
+        height: 370px;
+        opacity: 1;
+        z-index: 1;
+        transition-delay: opacity 1s;
+
+        h2,
+        .links-box {
+            opacity: 1;
+            transition: opacity .8s ease-in;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    
+
+    .main-info {
+
+        .container {
+            height: fit-content;
+        }
+
+        .spoiler {
+            padding: 0 15px;
+            font-size: 40px;
+        }
+
+        h1 {
+            margin: 30px auto 40px auto;
+            font-size: 4.5vh;
+            text-align: center;
+        }
+
+        .images {
+            margin: 0 auto;
+            width: 267px;
+            height: 400px;
+        }
+
+        .photo-and-text {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .text {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+
+    .promotion {
+        .container {
+            margin: 0 auto;
+            flex-direction: column-reverse;
+            height: fit-content;
+            padding: unset;
+        }
+
+        .description {
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        iframe {
+            margin-bottom: 30px;
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    .user-action {
+
+        .text-and-photo {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 32px;
+            width: 100%;
+        }
+
+        .empty-box {
+            width: 100%;
+        }
+
+        button {
+            margin: 0 0 20px;
+
+            &:active,
+            &:focus {
+                border-color: $mainColor;
+                background-color: white;            
+                color: $mainColor;
+            
+            }
+
+            &:hover {
+                border-color: $mainColor;
+                background-color: $mainColor;            
+                color: white;
+            }
+        }
+
+        .links {
+            width: 100%;
+
+            h2 {
+                padding: 0 10px;
+            }
+
+            .links-box {
+                justify-content: space-around;
+            }
+
+            a {
+                &:hover {
+                    font-size: 98px;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+footer {
+    background-color: #292662;
+    color: white;
+    & > p {
+        font-size: 14px !important;
+        text-align: center !important;
+        line-height: 34px !important;
+        margin: 0 !important;
+        color: white !important;
+    }
+
+    a:hover {
+        cursor: progress;
+    }
+
+    .container {
+        height: 100px;
+        align-items: center;
+        
+        
+    .contacts {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70px;
+        width: 200px;
+
+        p {
+            font-weight: 600;
+        }
+    }
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        .container {
+            height: 100px;
+            
+            .footer-text {
+                font-family: Arial, Helvetica, sans-serif !important;
+                font-size: inherit;
+                color: inherit;
+                margin: 0;
+            }
+        }
+    }
+}

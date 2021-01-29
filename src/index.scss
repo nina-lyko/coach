@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+$mainColor: #5b6874;
+$additionalColor: #b60034;
+$secondColor:  rgb(255, 235, 235);
+
+$tagsFont: 'Cormorant Infant', serif;
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 15px;
+  color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+      cursor: pointer;
+  }
+
+  &:active {
+      // transform: translateY(1px);
+      outline: none;
+      background-color: transparent;
+  }
+}
+
+button {
+  background-color: transparent;
+  outline: transparent;
+  border: transparent;
+
+  &:active,
+  &:focus {
+      outline: none;
+      background-color: transparent;
+
+  }
+
+  &:hover {
+      cursor: pointer;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p, span {
+  margin: 0;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.footer-text {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+@media (min-width: 901px) {
+  .mobile-only {
+      display: none;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .container {
+    width: 95vw;
+  }
+
+  .desktop-only {
+      display: none;
+  }
+}
