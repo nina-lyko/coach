@@ -27,6 +27,7 @@
     .photo-and-text {
         width: 80%;
         justify-content: space-between;
+        font-family: $tagsFont;
     }
 
     .images {
@@ -54,6 +55,7 @@
         text-shadow: 0 0 0.2px black;
         margin-bottom: 45px;
         line-height: 30px;
+        font-family: $tagsFont;
     }
 
     p {
@@ -61,6 +63,7 @@
         line-height: 24px;
         width: 500px;
         text-align: center;
+        font-family: $tagsFont;
     }
 
 

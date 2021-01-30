@@ -30,6 +30,7 @@ header {
     .nav-and-links {
         justify-content: space-between;
         align-items: center;
+        height: 70px;
     }
 
     .logo {
@@ -131,6 +132,7 @@ header {
         .nav-and-links {
             flex-direction: column-reverse;
             justify-content: flex-end;
+            height: fit-content;
 
             .logo {
                 margin: 40px 0 0 0;
