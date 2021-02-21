@@ -10,7 +10,7 @@ export const UserAction = () => {
                 <div className="text-and-photo flex">
                     <h1>Открыт дополнительный набор в Спортивно-оздоровительную группу<br />(0-1 год
                     обучения)<br />2015-2017 годa рождения.</h1>
-                    <img src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/IMG_4109.jpg" alt="" />
+                    <img src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/IMG_4109.jpg" alt="" />
                 </div>
                 <button className="get-lesson" type="button" onClick={() => active ? setActive(false) : setActive(true)}>Записаться на занятие</button>
                 <div className={`links ${active && "active"}`}>

@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <section className="about container">
             <div className="logo-and-text flex">
-                <img src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/AboutBanner.jpg" alt="pic" />
+                <img src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/AboutBanner.jpg" alt="pic" />
 
                 <div className="name">
                     <h1>Нина Литовченко</h1>
@@ -37,7 +37,7 @@ export const About = () => {
                     </ul>
                 </div>
 
-                <img className="picture" src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/AboutPic.JPG" alt="pic"/>
+                <img className="picture" src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/AboutPic.JPG" alt="pic"/>
             </div>
         </section>
     )

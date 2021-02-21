@@ -31,14 +31,21 @@ export const MainInfo = () => {
                     picturesChange()
                 }, 3000)
             }, 3000)
-        }, 3000)
+        }, 3000);
     }, [])
 
     useEffect(() => {
         picturesChange();
 
-        return setLoaded(false)
-    }, [loaded, picturesChange])
+        return () => {
+            setLoaded(false);
+            setSlider({
+                firstImg: true,
+                secondImg: false,
+                thirdImg: false
+            })
+        }
+        }, [loaded, picturesChange])
 
     return (
         <section className="main-info">
@@ -46,16 +53,16 @@ export const MainInfo = () => {
                 <h1 className="spoiler">Фигурное катание больше чем спорт!</h1>
                 <div className="photo-and-text flex">
                     <div className="images" onLoad={() => setLoaded(true)}>
-                        <img src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/IMG_4096.jpg" alt="img" className={`pic ${slider.firstImg && "visible"}`} />
-                        <img src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/IMG_2069.JPG" alt="img" className={`pic ${slider.secondImg && "visible"}`} />
-                        <img src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/IMG_2136.jpg" alt="img" className={`pic ${slider.thirdImg && "visible"}`} />
+                        <img src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/IMG_4096.jpg" alt="img" className={`pic ${slider.firstImg && "visible"}`} />
+                        <img src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/IMG_2069.JPG" alt="img" className={`pic ${slider.secondImg && "visible"}`} />
+                        <img src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/IMG_2136.jpg" alt="img" className={`pic ${slider.thirdImg && "visible"}`} />
                     </div>
                     <div className="text">
                         <h2>Нина Литовченко</h2>
                         <p>
                             ❄︎ Мастер спорта России по фигурному катанию. <br /> <br />
                             ❄︎ Победитель, учасник Международных и Всероссийских соревнований. <br /> <br />
-                            ❄︎ Опыт работы тренером более 8 лет. 
+                            ❄︎ Опыт работы тренером более 8 лет.
                         </p>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         <header>
 
-            <img src="https://raw.githubusercontent.com/andr-ll/coach/gh-pages/assets/img/Nina%20banner.png" alt="pic" className="banner" />
+            <img src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/Nina%20banner.png" alt="pic" className="banner" />
 
             <div className="container flex">
                 <div className="nav-and-links flex">
@@ -19,11 +19,11 @@ export const Header = () => {
                         <Link to="/coach/about">Обо мне</Link>
                         <Link to="/coach/contacts">Контакты</Link>
                     </nav>
-                    <img className="logo mobile-only" src="https://github.com/andr-ll/coach/blob/gh-pages/assets/img/NewLogo.png?raw=true" alt="pic" />
+                    <img className="logo mobile-only" src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/NewLogo.png" alt="pic" />
                     <Links />
                 </div>
 
-                <img className="logo desktop-only" src="https://github.com/andr-ll/coach/blob/gh-pages/assets/img/NewLogo.png?raw=true" alt="pic" />
+                <img className="logo desktop-only" src="https://raw.githubusercontent.com/nina-lyko/coach/gh-pages/assets/img/NewLogo.png" alt="pic" />
                 
 
                 <button className={`hamburger hamburger--squeeze mobile-only ${onHambClick ? "is-active" : ""}`} type="button" onClick={() => onHambClick ? setOnHambClick(false) : setOnHambClick(true)}>
