@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/coach/static/css/main.54fd0302.chunk.css",
-    "main.js": "/coach/static/js/main.c0760a8a.chunk.js",
-    "main.js.map": "/coach/static/js/main.c0760a8a.chunk.js.map",
+    "main.js": "/coach/static/js/main.da268b04.chunk.js",
+    "main.js.map": "/coach/static/js/main.da268b04.chunk.js.map",
     "runtime-main.js": "/coach/static/js/runtime-main.dbdc69da.js",
     "runtime-main.js.map": "/coach/static/js/runtime-main.dbdc69da.js.map",
-    "static/js/2.d8ed281f.chunk.js": "/coach/static/js/2.d8ed281f.chunk.js",
-    "static/js/2.d8ed281f.chunk.js.map": "/coach/static/js/2.d8ed281f.chunk.js.map",
+    "static/js/2.feff617d.chunk.js": "/coach/static/js/2.feff617d.chunk.js",
+    "static/js/2.feff617d.chunk.js.map": "/coach/static/js/2.feff617d.chunk.js.map",
     "static/js/3.ace193d3.chunk.js": "/coach/static/js/3.ace193d3.chunk.js",
     "static/js/3.ace193d3.chunk.js.map": "/coach/static/js/3.ace193d3.chunk.js.map",
     "index.html": "/coach/index.html",
     "static/css/main.54fd0302.chunk.css.map": "/coach/static/css/main.54fd0302.chunk.css.map",
-    "static/js/2.d8ed281f.chunk.js.LICENSE.txt": "/coach/static/js/2.d8ed281f.chunk.js.LICENSE.txt"
+    "static/js/2.feff617d.chunk.js.LICENSE.txt": "/coach/static/js/2.feff617d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dbdc69da.js",
-    "static/js/2.d8ed281f.chunk.js",
+    "static/js/2.feff617d.chunk.js",
     "static/css/main.54fd0302.chunk.css",
-    "static/js/main.c0760a8a.chunk.js"
+    "static/js/main.da268b04.chunk.js"
   ]
 }
