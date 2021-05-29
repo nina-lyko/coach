@@ -4,7 +4,7 @@ export const Links = () => {
     const links = [
         {
             id: 1,
-            url: "https://www.instagram.com/coach.nina_ly.ko",
+            url: "https://www.instagram.com/coach.nina__ly.ko",
             name: "fab fa-instagram"
         },
         {

@@ -18,7 +18,7 @@ export const Contacts = () => {
                     <div className="contacts-wrapper second flex">
                         <div className="cube flex">
                             <h2>Следите за моими каналами:</h2>
-                            <a href="https://www.instagram.com/coach.nina_ly.ko" target="blank"><h3>Instagram</h3></a>
+                            <a href="https://www.instagram.com/coach.nina__ly.ko" target="blank"><h3>Instagram</h3></a>
                             <a href="https://www.youtube.com/channel/UCct0J2h7lJHT22S8RM1zkeA" target="blank"><h3>YouTube</h3></a>
                         </div>
                         <div className="text flex">
